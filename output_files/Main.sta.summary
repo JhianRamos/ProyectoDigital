@@ -1,0 +1,173 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.288
+TNS   : -562.144
+
+Type  : Slow 1200mV 85C Model Setup 'keyboard:teclado|divfrec:div|clk_1hz'
+Slack : -3.198
+TNS   : -43.381
+
+Type  : Slow 1200mV 85C Model Setup 'TOP:toppp|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -2.935
+TNS   : -71.269
+
+Type  : Slow 1200mV 85C Model Setup 'divfrec:div|clk_1hz'
+Slack : -2.292
+TNS   : -22.292
+
+Type  : Slow 1200mV 85C Model Hold 'TOP:toppp|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -0.294
+TNS   : -1.365
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.434
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divfrec:div|clk_1hz'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'keyboard:teclado|divfrec:div|clk_1hz'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clk'
+Slack : -1.294
+TNS   : -48.610
+
+Type  : Slow 1200mV 85C Model Removal 'clk'
+Slack : 1.083
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -270.660
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'TOP:toppp|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -1.487
+TNS   : -47.584
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'keyboard:teclado|divfrec:div|clk_1hz'
+Slack : -1.487
+TNS   : -38.662
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divfrec:div|clk_1hz'
+Slack : -1.487
+TNS   : -17.844
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.969
+TNS   : -516.660
+
+Type  : Slow 1200mV 0C Model Setup 'keyboard:teclado|divfrec:div|clk_1hz'
+Slack : -2.897
+TNS   : -38.284
+
+Type  : Slow 1200mV 0C Model Setup 'TOP:toppp|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -2.651
+TNS   : -64.562
+
+Type  : Slow 1200mV 0C Model Setup 'divfrec:div|clk_1hz'
+Slack : -2.099
+TNS   : -20.163
+
+Type  : Slow 1200mV 0C Model Hold 'TOP:toppp|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -0.308
+TNS   : -1.373
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divfrec:div|clk_1hz'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'keyboard:teclado|divfrec:div|clk_1hz'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clk'
+Slack : -1.147
+TNS   : -42.254
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : 0.946
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -270.660
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'TOP:toppp|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -1.487
+TNS   : -47.750
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'keyboard:teclado|divfrec:div|clk_1hz'
+Slack : -1.487
+TNS   : -38.662
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divfrec:div|clk_1hz'
+Slack : -1.487
+TNS   : -17.844
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.293
+TNS   : -145.720
+
+Type  : Fast 1200mV 0C Model Setup 'keyboard:teclado|divfrec:div|clk_1hz'
+Slack : -0.752
+TNS   : -6.024
+
+Type  : Fast 1200mV 0C Model Setup 'TOP:toppp|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -0.736
+TNS   : -14.249
+
+Type  : Fast 1200mV 0C Model Setup 'divfrec:div|clk_1hz'
+Slack : -0.440
+TNS   : -3.026
+
+Type  : Fast 1200mV 0C Model Hold 'TOP:toppp|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'keyboard:teclado|divfrec:div|clk_1hz'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'divfrec:div|clk_1hz'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clk'
+Slack : -0.059
+TNS   : -1.122
+
+Type  : Fast 1200mV 0C Model Removal 'clk'
+Slack : 0.463
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -193.980
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'TOP:toppp|UART_BaudRate_generator:I_BAUDGEN|baudRateReg[0]'
+Slack : -1.000
+TNS   : -32.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'keyboard:teclado|divfrec:div|clk_1hz'
+Slack : -1.000
+TNS   : -26.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divfrec:div|clk_1hz'
+Slack : -1.000
+TNS   : -12.000
+
+------------------------------------------------------------

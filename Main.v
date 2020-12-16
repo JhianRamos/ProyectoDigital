@@ -1,0 +1,60 @@
+module Main(Rst_n,Rx,Tx,RxDone,Data,clk,filas,columnas,SSeg,sens,mot1,mot2,pant,LCD_RW,LCD_EN,LCD_RS,LCD_DATA);
+
+input clk;
+input  [3:0]filas;
+input [1:0] sens; 
+input [7:0] LCD_DATA; //LCD Data bus 8 bits
+output LCD_RW;        //LCD Read/Write Select, 0 = Write, 1 = Read
+output LCD_EN;        //LCD Enable
+output LCD_RS;        //LCD Command/Data Select, 0 = Command, 1 = Data
+
+output [3:0]columnas;
+output mot1;
+output mot2;
+output [6:0]SSeg; 	// Visulaizar tecla pulsada en el 7seg
+output reg pant;
+
+input           Rst_n           ; // Reset
+input           Rx              ; // RS232 RX line.
+output          Tx              ; // RS232 TX line.
+output         RxDone           ; // Reception completed. Data is valid.
+output  [7:0] Data; 
+ 
+wire clk_1;
+wire [1:0] motaux;
+wire [3:0] num;
+wire [3:0] msg;
+wire [1:0] rfid;
+wire [7:0] RxData;
+
+initial
+begin
+pant=0;  // Anodo para el 7seg
+end
+
+
+motores mots(.clk(clk),.mot(motaux),.mot1(mot1),.mot2(mot2));
+
+divfrec div(.clk(clk), .clk_1hz(clk_1));
+
+TOP toppp (.Clk(clk),.Rst_n(Rst_n),.Rx(Rx),.Tx(Tx),.RxData(RxData),.RxDone(RxDone));
+
+RFID rfd (.RxData(RxData),.rfid(rfid),.Data(Data));
+
+keyboard teclado (.clk(clk),.filas(filas),.columnas(columnas),.num(num));
+
+MaquinadeEstados maq (.clk(clk_1),.mot(motaux),.sens(sens),.msg(msg),.num(num),.rfid(rfid));
+
+		 
+LCD_Top LCD(.mensaje(msg),
+						.CLOCK_50(clk),  //50 MZ
+                 .LCD_RW(LCD_RW),   //LCD Read/Write Select, 0 = Write, 1 = Read
+                 .LCD_EN(LCD_EN),   //LCD Enable
+                 .LCD_RS(LCD_RS),   //LCD Command/Data Select, 0 = Command, 1 = Data
+                 .LCD_DATA(LCD_DATA) //LCD Data bus 8 bit
+             );
+
+BCDA7SEG bcd (.num(num), .sseg(SSeg));
+
+				 
+endmodule
